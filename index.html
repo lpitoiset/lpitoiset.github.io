@@ -6,8 +6,8 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
+        <title>Laurent Pitoiset</title>
+        <meta name="description" content="Laurent Pitoiset GitHub projects">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -15,28 +15,134 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <style type="text/css">
+            body { 
+                margin: 0px; 
+                /*background: url(img/sky.jpg) fixed;
+                background-size: cover; */
+                color: white;
+                -webkit-font-smoothing: antialiased;
+                text-shadow: rgba(0,0,0,.01) 0 0 1px; 
+                -webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+
+            }
+            a { color: white; text-decoration: none;}
+            #content_layer { position: absolute; top: 50px; left:10px; right:500px; text-align: justify; z-index: 1000;}
+            #title_div { position: fixed; top: 10px; left: 10px;}
+            #lpitoiset {
+                position: fixed;
+                background: url(img/lpitoiset-sm.png);
+                bottom: 0px;
+                right: 0px;
+                height: 164px;
+                width: 200px;
+                z-index: 400;
+            }
+            #menu { 
+                    position: fixed;
+                    top: 10px;
+                    right: 10px; 
+                    height: 100px;
+                    text-align: right;
+                    z-index: 300;
+                }
+            #bg_layer_1 { 
+                    position: fixed;
+                  
+                    z-index: 300;
+                }
+            #bg_layer_2 { 
+                margin: 0px;
+                width: 100%;
+                height: 100%;
+                    position: fixed;
+                    background: url(img/cervin5.png) fixed; 
+                    background-size: cover;
+                    z-index: 200;
+                }
+            #bg_layer_3 { 
+                    position: fixed;
+                    background: url(img/sky.jpg); 
+                    background-size: contain;
+                    width: 150%;
+                    height: 150%;
+                    z-index: 100;
+                }
+                #object{
+    background-color: #fe5652;
+
+    visibility: hidden;
+}
+p::after {
+  content: "";
+}
+        </style>
+        <script type="text/javascript">
+            function parallax() {
+                var parallax_layer1 = document.getElementById('bg_layer_3');
+                var parallax_menu = document.getElementById('menu');
+                parallax_layer1.style.left = -(window.pageYOffset / 10)+'px';
+                // parallax_menu.style.top = (window.pageYOffset)+'px';
+            }
+            window.addEventListener("scroll", parallax, false);
+        </script>
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+<div id="bg_layer_1"></div>
+<div id="bg_layer_2"></div>
+<div id="menu">
+    <img src="img/logo-black-sm.png">
+    <br>
+    <br>
+    <a href="http://data.unhcr.org" target="_other">UNHCR data portal</a><br>
+    <a href="http://popdata.unhcr.org" target="_other">UNHCR operational data collection</a><br>
+    <br>
+    <a href="http://reliefweb.int/jobs" target="_other">jobs in the humanitarian sector</a><br>
+    <a href="http://digitalhumanitarians.com/" target="_other">the digital humanitarian network</a></div>
+<div id="bg_layer_3"></div>
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <div id="title_div">
+        <h1>Laurent Pitoiset Github projects</h1>
+        </div>
+        <div id="lpitoiset"></div>
+<div id="content_layer">
+<h1>what if...</h1>
+<p>you could combine your passion for new technology
+    <br><br><br>
+    and humanitarian contribution?
+    <br><br><br>
+Humanitarian organizations need talented professionals to provide state-of-the-art technical solutions to support their Persons of Concern. There are several ways you can contribute to existing initiatives
+</p>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+<h1>... come and contribute!</h1>
+</div>
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+<!--
+       <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
+  ga('create', 'UA-56765429-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+-->
     </body>
 </html>
