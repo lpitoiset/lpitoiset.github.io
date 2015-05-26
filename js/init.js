@@ -46,9 +46,6 @@
 
 			}
 
-		// Scrolly.
-			$('.scrolly').scrolly();
-
 	});
 
 })(jQuery);
