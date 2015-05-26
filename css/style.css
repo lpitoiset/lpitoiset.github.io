@@ -169,6 +169,14 @@
 		text-align: right;
 	}
 
+/* misc LP */
+
+.querybuilder {
+	background-color: #333;
+	width: 100%
+}
+
+
 /* Section/Article */
 
 	section.special, article.special {
@@ -243,7 +251,6 @@
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
-	select,
 	textarea {
 		-moz-appearance: none;
 		-webkit-appearance: none;
@@ -928,16 +935,22 @@
 	.main {
 		padding: 6em 0 4em 0;
 	}
-
+		.main.style_divider {
+			background-color: #333;
+			color: rgba(255, 255, 255, 0.75);
+			background-attachment: fixed,							fixed;
+			background-image: url("images/overlay1.png"), url("../images/pic10.jpg");
+			background-size: auto,							cover;
+			height: 50px;
+		}
 		.main.style1 {
 			background: #fff;
 		}
 
 		.main.style2 {
-			background-color: #333;
+			background-color: #fff;
 			color: rgba(255, 255, 255, 0.75);
 			background-attachment: fixed,							fixed;
-			background-image: url("images/overlay1.png"), url("../images/header.jpg");
 			background-size: auto,							cover;
 		}
 
@@ -1335,3 +1348,69 @@
 					margin-left: 0;
 					padding: 0;
 				}
+/* lp */
+
+.tab-panels ul {
+    margin: 0;
+    padding: 0;
+}
+.tab-panels ul li {
+    list-style-type: none;
+    display: inline-block;
+    background: #999;
+    margin: 0;
+    padding: 3px 10px;
+    border-radius: 10px 10px 0 0;
+    color: #fff;
+    font-weight: 200;
+    cursor: pointer;
+    width: 20%;
+
+}
+.tab-panels ul li:hover {
+    color: #fff;
+    background: #666;
+}
+
+.tab-panels ul li.active {
+    color: #fff;
+    background: #666;
+}
+
+.allpanels .panel {
+    display:none;
+    background: #eeeeff;
+    padding: 30px;
+    border-radius: 0 0 10px 10px;
+}
+
+.allpanels .panel.active {
+    display:block;
+}
+
+#panel1 {
+	background-color: #ececec;
+}
+/* sankey */
+
+.node rect {
+  cursor: move;
+  fill-opacity: .9;
+  shape-rendering: crispEdges;
+}
+
+.node text {
+  pointer-events: none;
+  text-shadow: 0 1px 0 #fff;
+}
+
+.link {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .2;
+}
+
+.link:hover {
+  stroke-opacity: .5;
+}
+
